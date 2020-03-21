@@ -193,6 +193,7 @@ public class CommonFunction {
 		 
 	 }
 	 /**
+	  * This is javascript method
 	  * @author Baidar
 	  * @param element
 	  */

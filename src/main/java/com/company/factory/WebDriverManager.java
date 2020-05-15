@@ -11,7 +11,7 @@ import com.company.profile.FirefoxBrowserProfile;
 
 public class WebDriverManager implements webDriverFactory {
 
-	protected WebDriver driver=null;
+	public static WebDriver driver=null;
 	public void initalizeDriver() {
     
 
@@ -24,7 +24,6 @@ public class WebDriverManager implements webDriverFactory {
 				WebDriverCapbiltyBuilder chromeCap=new WebDriverCapbiltyBuilder();
                 ChromeProfile profile=new ChromeProfile();
 				driver=new ChromeDriver(profile.option);
-				driver.get("https://www.google.com");
 				driver.manage().window().maximize();
 				   break;
 			case "firefox":
@@ -44,9 +43,13 @@ public class WebDriverManager implements webDriverFactory {
 		
 	
 		
-		
-		
-		
+	}
+	
+	
+	public void quitDriver()
+	{
+	
+		driver.quit();
 		
 	}
 

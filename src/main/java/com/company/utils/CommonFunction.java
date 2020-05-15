@@ -1,4 +1,4 @@
-package com.company.utils;
+ package com.company.utils;
 
 import java.io.FileInputStream;
 import java.util.Iterator;
@@ -13,9 +13,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import com.company.exception.PropertyNotFoundException;
+import com.company.factory.WebDriverManager;
 
-public class CommonFunction {
-	protected WebDriver driver;
+public class CommonFunction extends WebDriverManager {
 	
 	/**
 	 * @description This method is used for reading any properties extension file

@@ -1,0 +1,8 @@
+Feature: sign in feature
+
+  Background:                                                        # src/test/resources/features/login.feature:3
+    Given the user is on "https://admin-demo.nopcommerce.com/admin/" # login.the_user_is_on(String)
+
+  #@smoke
+  Scenario: Create New Account verification # src/test/resources/features/login.feature:8
+    Given the user click on sign in link    # login.the_user_click_on_sign_in_link()

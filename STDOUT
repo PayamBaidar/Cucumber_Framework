@@ -1,8 +1,12 @@
 Feature: sign in feature
 
-  Background:                                                        # src/test/resources/features/login.feature:3
-    Given the user is on "https://admin-demo.nopcommerce.com/admin/" # login.the_user_is_on(String)
+  Background:  # src/test/resources/features/login.feature:3
 
+  #Given the user is on "https://admin-demo.nopcommerce.com/admin/"
   #@smoke
-  Scenario: Create New Account verification # src/test/resources/features/login.feature:8
-    Given the user click on sign in link    # login.the_user_click_on_sign_in_link()
+  Scenario: Create New Account verification                          # src/test/resources/features/login.feature:8
+    Given the user is on "https://admin-demo.nopcommerce.com/admin/" # loginSteps.the_user_is_on(String)
+    When the user enter valid username                               # loginSteps.the_user_enter_valid_username()
+    And the user enter valid password                                # loginSteps.the_user_enter_valid_password()
+    And the user clicks on sigin button                              # loginSteps.the_user_clicks_on_sigin_button()
+    Then The user is successfully loged in and Dashboard is displays # loginSteps.the_user_is_successfully_loged_in_and_Dashboard_is_displays()

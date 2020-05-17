@@ -15,8 +15,6 @@ import cucumber.api.junit.Cucumber;
 		
 		monochrome = true,
 
-//				tags = "@smoke",
-//				tags = "@regression",
 		
 		features = {"src\\test\\resources\\features\\login.feature"	
 		

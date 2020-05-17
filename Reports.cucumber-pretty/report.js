@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 12668405500,
+  "duration": 11482210700,
   "status": "passed"
 });
 formatter.background({
@@ -70,39 +70,39 @@ formatter.match({
   "location": "loginSteps.the_user_is_on(String)"
 });
 formatter.result({
-  "duration": 1981664800,
+  "duration": 1688049200,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.the_user_enter_valid_username()"
 });
 formatter.result({
-  "duration": 3314616700,
+  "duration": 3177241000,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.the_user_enter_valid_password()"
 });
 formatter.result({
-  "duration": 225867500,
+  "duration": 120866200,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.the_user_clicks_on_sigin_button()"
 });
 formatter.result({
-  "duration": 4032955800,
+  "duration": 2789692000,
   "status": "passed"
 });
 formatter.match({
   "location": "loginSteps.the_user_is_successfully_loged_in_and_Dashboard_is_displays()"
 });
 formatter.result({
-  "duration": 246060600,
+  "duration": 73703900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 900258600,
+  "duration": 746265100,
   "status": "passed"
 });
 });
